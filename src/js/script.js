@@ -1,29 +1,4 @@
-const users = [
-  {
-    name: "John",
-    balance: 100,
-    friends: ["Max", "Vlad"],
-    skills: ["JavaScript", "HTML", "CSS"],
-  },
-  {
-    name: "Max",
-    balance: 200,
-    friends: ["John"],
-    skills: ["JavaScript", "React", "Node.js"],
-  },
-  {
-    name: "Vlad",
-    balance: 300,
-    friends: ["Max", "John", "Sam", "Ann"],
-    skills: ["HTML", "CSS", "Sass"],
-  },
-  {
-    name: "Sam",
-    balance: 300,
-    friends: ["Vlad", "John"],
-    skills: ["JavaScript", "React", "Redux"],
-  },
-];
+import users from "./users.js";
 //1
 const totalBalanceOfUsers = users.reduce((acc, currentUser) => {
   return acc + currentUser.balance;
